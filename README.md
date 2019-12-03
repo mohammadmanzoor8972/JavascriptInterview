@@ -22,7 +22,7 @@ return strs;
 }
 ```
 
-## Get Duplication values from multip arrays.
+## Find Duplicate values from multiple arrays.
 Example : duplicate(..ar1, ...ar2, ...ar3)
 ```javascript
 function dups(){
@@ -43,9 +43,20 @@ dupl.push(arg[x])
 }
 }
 
-return Object.values(obj);
+return Object.values(dupl);
 }
 
 ```
+
+## Find Palindrome  String
+```javascript
+Example : "HelloWorld" => false
+"HelloolleH" => true
+
+function isPalindrome (str){
+return str.split("").reverse().join("")==str
+}
+```
+
 
 
