@@ -22,6 +22,19 @@ return strs;
 }
 ```
 
+## Reverse the array without inbuild function
+```javascript
+function reverseArrayInPlace(arr) {
+  for (var i = 0; i <= Math.floor((arr.length - 1) / 2); i++) {
+      let el = arr[i];
+      arr[i] = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = el;
+  }
+  return arr;
+}
+```
+
+
 ## Find Duplicate values from multiple arrays.
 Example : duplicate(..ar1, ...ar2, ...ar3)
 ```javascript
