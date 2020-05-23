@@ -61,13 +61,23 @@ return Object.values(dupl);
 
 ```
 
-## Find Palindrome  String
+## Find Palindrome String
 ```javascript
 Example : "HelloWorld" => false
 "HelloolleH" => true
 
 function isPalindrome (str){
 return str.split("").reverse().join("")==str
+}
+```
+
+## Find Consecutive Character
+```javascript
+function letterCount(str){
+  var s= str.match(/([a-zA-Z])\1*/g)||[];
+return s.map(function(itm){
+  return [itm.charAt(0), itm.length];
+});
 }
 ```
 
