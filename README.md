@@ -35,6 +35,38 @@ function reverseArrayInPlace(arr) {
 ```
 
 
+## Balance Bracket
+```javascript
+var checkBracket = function(str){
+let stack = [];
+let dict = {
+'(':')',
+'{':'}',
+'[':']'
+}
+
+for(let i=0; i<str.length; i++){
+if(str[i]==='(' || str[i] === '{' || str[i] === '[') {
+stack.push(str[i]);
+} else {
+let end = stack.pop();
+if(str[i]!==dict[end]) {
+return false;
+}
+
+}
+
+}
+if(stack.length !==0) {
+return false;
+}
+return true;
+
+
+}
+```
+
+
 ## Find Duplicate values from multiple arrays.
 Example : duplicate(..ar1, ...ar2, ...ar3)
 ```javascript
